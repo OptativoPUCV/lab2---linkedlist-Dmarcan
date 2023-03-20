@@ -60,3 +60,14 @@ list.c:32:10: error: unused variable ‘lista’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 4f40704
+Mon 20 Mar 2023 10:55:34 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:32:10: error: unused variable ‘lista’ [-Werror=unused-variable]
+   32 |   List * lista =(List *)malloc(sizeof(List));
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e1374c2
