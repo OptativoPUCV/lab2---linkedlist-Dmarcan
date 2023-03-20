@@ -2,3 +2,26 @@ Mon 20 Mar 2023 10:50:46 PM UTC:
  tests:  0|6
 total_score: 0/70
 f4820c8
+Mon 20 Mar 2023 10:55:01 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:32:3: error: unknown type name ‘list’; did you mean ‘List’?
+   32 |   list * lista =(list *)malloc(sizeof(list));
+      |   ^~~~
+      |   List
+list.c:32:18: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   32 |   list * lista =(list *)malloc(sizeof(list));
+      |                  ^~~~
+      |                  List
+list.c:32:18: note: each undeclared identifier is reported only once for each function it appears in
+list.c:32:24: error: expected expression before ‘)’ token
+   32 |   list * lista =(list *)malloc(sizeof(list));
+      |                        ^
+list.c:32:10: error: unused variable ‘lista’ [-Werror=unused-variable]
+   32 |   list * lista =(list *)malloc(sizeof(list));
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+88303b5
