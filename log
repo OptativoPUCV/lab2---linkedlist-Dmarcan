@@ -44,3 +44,19 @@ list.c:32:10: error: unused variable ‘lista’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 bad529f
+Mon 20 Mar 2023 10:55:26 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:32:39: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   32 |   List * lista =(List *)malloc(sizeof(list));
+      |                                       ^~~~
+      |                                       List
+list.c:32:39: note: each undeclared identifier is reported only once for each function it appears in
+list.c:32:10: error: unused variable ‘lista’ [-Werror=unused-variable]
+   32 |   List * lista =(List *)malloc(sizeof(list));
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4f40704
