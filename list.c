@@ -30,6 +30,7 @@ Node * createNode(void * data) {
 
 List * createList() {
   List * lista =(List *)malloc(sizeof(List));
+  if (lista==NULL)EXIT_FAILURE;
   lista->head=NULL;
   lista->tail=NULL;
   lista->current=NULL;
@@ -141,7 +142,6 @@ void * popCurrent(List * list) {
       list->current=list->current->next;
       free(nodoelimin);
       return data;
-      
     }
   }
 }
