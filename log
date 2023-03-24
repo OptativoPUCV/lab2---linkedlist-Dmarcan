@@ -91,3 +91,312 @@ Mon 20 Mar 2023 10:57:03 PM UTC:
  tests:  1|5
 total_score: 10/70
 1ead7fc
+Tue 21 Mar 2023 11:35:52 PM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:10: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   42 |   return lista->head->data;
+      |          ^~~~~
+      |          list
+list.c:42:10: note: each undeclared identifier is reported only once for each function it appears in
+list.c:44:1: error: control reaches end of non-void function [-Werror=return-type]
+   44 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1eba667
+Tue 21 Mar 2023 11:36:27 PM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  0|0
+1eba667
+Tue 21 Mar 2023 11:38:12 PM UTC: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:30: error: ‘Node’ has no member named ‘head’
+   42 |   list->current=list->current->head;
+      |                              ^~
+Compilation failed
+1eba667
+Tue 21 Mar 2023 11:38:29 PM UTC: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+1eba667
+Tue 21 Mar 2023 11:39:28 PM UTC: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+ tests:  0|0
+1eba667
+Tue 21 Mar 2023 11:40:39 PM UTC: 
+ list.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+ tests:  0|0
+1eba667
+Tue 21 Mar 2023 11:41:21 PM UTC: 
+ list.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+1eba667
+Tue 21 Mar 2023 11:44:21 PM UTC: 
+ list.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+ tests:  0|0
+1eba667
+Tue 21 Mar 2023 11:45:12 PM UTC: 
+ list.c | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+ tests:  0|0
+1eba667
+Tue 21 Mar 2023 11:45:36 PM UTC: 
+ list.c | 14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+ tests:  0|0
+1eba667
+Tue 21 Mar 2023 11:46:17 PM UTC: 
+ list.c | 14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+ tests:  5|4
+total_score: 25/70
+1eba667
+Tue 21 Mar 2023 11:46:42 PM UTC: 
+ list.c | 14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+ tests:  5|4
+total_score: 25/70
+1eba667
+Tue 21 Mar 2023 11:50:46 PM UTC: 
+ list.c | 21 ++++++++++++++++++---
+ 1 file changed, 18 insertions(+), 3 deletions(-)
+ tests:  6|4
+total_score: 25/70
+1eba667
+Tue 21 Mar 2023 11:51:04 PM UTC: 
+ list.c | 20 +++++++++++++++++---
+ 1 file changed, 17 insertions(+), 3 deletions(-)
+ tests:  6|4
+total_score: 25/70
+1eba667
+Tue 21 Mar 2023 11:53:53 PM UTC: 
+ list.c | 28 ++++++++++++++++++++++++----
+ 1 file changed, 24 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:69:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   69 |   if (list->current->prev=NULL)return NULL;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1eba667
+Tue 21 Mar 2023 11:54:31 PM UTC: 
+ list.c | 28 ++++++++++++++++++++++++----
+ 1 file changed, 24 insertions(+), 4 deletions(-)
+ tests:  0|0
+1eba667
+Tue 21 Mar 2023 11:55:13 PM UTC: 
+ list.c | 28 ++++++++++++++++++++++++----
+ 1 file changed, 24 insertions(+), 4 deletions(-)
+ tests:  0|0
+1eba667
+Tue 21 Mar 2023 11:56:02 PM UTC: 
+ list.c | 28 ++++++++++++++++++++++++----
+ 1 file changed, 24 insertions(+), 4 deletions(-)
+ tests:  0|0
+1eba667
+Tue 21 Mar 2023 11:56:19 PM UTC: 
+ list.c | 28 ++++++++++++++++++++++++----
+ 1 file changed, 24 insertions(+), 4 deletions(-)
+ tests:  9|3
+total_score: 35/70
+1eba667
+Tue 21 Mar 2023 11:57:00 PM UTC: 
+ list.c | 28 ++++++++++++++++++++++++----
+ 1 file changed, 24 insertions(+), 4 deletions(-)
+ tests:  6|4
+total_score: 25/70
+1eba667
+Tue 21 Mar 2023 11:57:32 PM UTC: 
+ list.c | 28 ++++++++++++++++++++++++----
+ 1 file changed, 24 insertions(+), 4 deletions(-)
+ tests:  0|0
+1eba667
+Tue 21 Mar 2023 11:57:44 PM UTC: 
+ list.c | 28 ++++++++++++++++++++++++----
+ 1 file changed, 24 insertions(+), 4 deletions(-)
+ tests:  9|3
+total_score: 35/70
+1eba667
+Wed 22 Mar 2023 12:01:36 AM UTC: 
+ list.c | 31 +++++++++++++++++++++++++++----
+ 1 file changed, 27 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:79:3: error: unknown type name ‘node’; did you mean ‘Node’?
+   79 |   node * nodo=creteNode(data);
+      |   ^~~~
+      |   Node
+list.c:79:15: error: implicit declaration of function ‘creteNode’; did you mean ‘createNode’? [-Werror=implicit-function-declaration]
+   79 |   node * nodo=creteNode(data);
+      |               ^~~~~~~~~
+      |               createNode
+list.c:79:15: error: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+list.c:79:10: error: unused variable ‘nodo’ [-Werror=unused-variable]
+   79 |   node * nodo=creteNode(data);
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1eba667
+Wed 22 Mar 2023 12:01:52 AM UTC: 
+ list.c | 31 +++++++++++++++++++++++++++----
+ 1 file changed, 27 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:79:3: error: unknown type name ‘node’; did you mean ‘Node’?
+   79 |   node * nodo=createNode(data);
+      |   ^~~~
+      |   Node
+list.c:79:15: error: initialization of ‘int *’ from incompatible pointer type ‘Node *’ [-Werror=incompatible-pointer-types]
+   79 |   node * nodo=createNode(data);
+      |               ^~~~~~~~~~
+list.c:79:10: error: unused variable ‘nodo’ [-Werror=unused-variable]
+   79 |   node * nodo=createNode(data);
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1eba667
+Wed 22 Mar 2023 12:02:06 AM UTC: 
+ list.c | 31 +++++++++++++++++++++++++++----
+ 1 file changed, 27 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:79:10: error: unused variable ‘nodo’ [-Werror=unused-variable]
+   79 |   Node * nodo=createNode(data);
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1eba667
+Wed 22 Mar 2023 12:04:31 AM UTC: 
+ list.c | 34 ++++++++++++++++++++++++++++++----
+ 1 file changed, 30 insertions(+), 4 deletions(-)
+ tests:  0|0
+1eba667
+Wed 22 Mar 2023 12:07:24 AM UTC: 
+ list.c | 41 +++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 37 insertions(+), 4 deletions(-)
+ tests:  9|3
+total_score: 35/70
+1eba667
+Wed 22 Mar 2023 12:07:48 AM UTC: 
+ list.c | 41 +++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 37 insertions(+), 4 deletions(-)
+ tests:  9|3
+total_score: 35/70
+1eba667
+Wed 22 Mar 2023 12:08:22 AM UTC: 
+ list.c | 42 ++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 38 insertions(+), 4 deletions(-)
+ tests:  10|2
+total_score: 45/70
+1eba667
+Wed 22 Mar 2023 12:13:24 AM UTC: 
+ list.c | 50 ++++++++++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 46 insertions(+), 4 deletions(-)
+ tests:  0|0
+1eba667
+Wed 22 Mar 2023 12:16:46 AM UTC: 
+ list.c | 57 +++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 53 insertions(+), 4 deletions(-)
+ tests:  11|1
+total_score: 55/70
+1eba667
+Wed 22 Mar 2023 12:17:29 AM UTC: 
+ list.c | 61 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 57 insertions(+), 4 deletions(-)
+ tests:  11|1
+total_score: 55/70
+1eba667
+Wed 22 Mar 2023 12:26:59 AM UTC: 
+ list.c | 74 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 69 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:134:22: error: ‘Node’ has no member named ‘nex’; did you mean ‘next’?
+  134 |   if (list->current->nex==NULL)
+      |                      ^~~
+      |                      next
+Compilation failed
+1eba667
+Wed 22 Mar 2023 12:27:05 AM UTC: 
+ list.c | 74 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 69 insertions(+), 5 deletions(-)
+ tests:  0|0
+1eba667
+Wed 22 Mar 2023 12:27:46 AM UTC: 
+ list.c | 78 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 73 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:147:1: error: control reaches end of non-void function [-Werror=return-type]
+  147 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1eba667
+Wed 22 Mar 2023 12:28:08 AM UTC: 
+ list.c | 77 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 72 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:146:1: error: control reaches end of non-void function [-Werror=return-type]
+  146 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1eba667
+Wed 22 Mar 2023 12:28:36 AM UTC: 
+ list.c | 78 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 73 insertions(+), 5 deletions(-)
+ tests:  0|0
+1eba667
+Wed 22 Mar 2023 12:34:11 AM UTC: 
+ list.c | 91 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 86 insertions(+), 5 deletions(-)
+ tests:  12|0
+total_score: 70/70
+1eba667
+Wed 22 Mar 2023 12:34:47 AM UTC: 
+ list.c | 92 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 87 insertions(+), 5 deletions(-)
+ tests:  12|0
+total_score: 70/70
+1eba667
+Wed 22 Mar 2023 12:35:07 AM UTC: 
+ list.c | 94 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 89 insertions(+), 5 deletions(-)
+ tests:  12|0
+total_score: 70/70
+1eba667
+Wed 22 Mar 2023 12:38:23 AM UTC: 
+ list.c | 94 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 89 insertions(+), 5 deletions(-)
+ tests:  12|0
+total_score: 70/70
+1eba667
+Wed 22 Mar 2023 12:40:51 AM UTC: 
+ list.c | 94 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 89 insertions(+), 5 deletions(-)
+ tests:  12|0
+total_score: 70/70
+1eba667
+Fri 24 Mar 2023 11:19:26 AM UTC: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  12|0
+total_score: 70/70
+1eba667
