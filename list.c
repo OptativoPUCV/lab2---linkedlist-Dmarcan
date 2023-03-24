@@ -132,11 +132,13 @@ void * popCurrent(List * list) {
 > **Nota**: El current debe quedar apuntando al nodo siguiente del eliminado.
     */
   void * data=list->current->data;
+  Node * nodoelimin=list->current;
+  
   if (list->current->next==NULL)
   {
     list->tail=list->current->prev;
     list->current->prev->next=NULL;
-    //free(list->current);
+    free(nodoelimin);
     list->current=list->current->prev;
     return data;
   }
@@ -146,7 +148,7 @@ void * popCurrent(List * list) {
     {
       list->head=list->current->next;
       list->current->next->prev=NULL;
-      //free(list->current);
+      free(nodoelimin);
       list->current=list->current->next;
       return data;
     }
@@ -154,7 +156,7 @@ void * popCurrent(List * list) {
     {
       list->current->prev->next=list->current->next;
       list->current->next->prev=list->current->prev;
-      //free(list->current);
+      free(nodoelimin);
       list->current=list->current->next;
       return data;
       
