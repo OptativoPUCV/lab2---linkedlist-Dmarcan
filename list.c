@@ -139,8 +139,8 @@ void * popCurrent(List * list) {
       list->current->prev->next=list->current->next;
       list->current->next->prev=list->current->prev;
       list->current=list->current->next;
-      free(nodoelimin);
-      //return data;
+      //free(nodoelimin);
+      return data;
     }
   }
 }
